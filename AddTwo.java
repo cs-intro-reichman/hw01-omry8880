@@ -6,7 +6,6 @@ public class AddTwo {
 		int firstInteger = Integer.parseInt(args[0]);
 		int secondInteger = Integer.parseInt(args[1]);
 		
-		System.out.println("The sum of the given integers is: " +
-		 (firstInteger + secondInteger));
+		System.out.println(firstInteger + " " + secondInteger + " = " + (firstInteger + secondInteger));
 	}
 }
