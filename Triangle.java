@@ -5,6 +5,10 @@
  */ 
 public class Triangle {
 	public static void main(String[] args) {
-		// Put your code here	
+		int sideOne = Integer.parseInt(args[0]);
+		int sideTwo = Integer.parseInt(args[1]);
+		int sideThree = Integer.parseInt(args[2]);
+
+		System.out.println(sideOne + sideTwo > sideThree && sideOne + sideThree > sideTwo && sideTwo + sideThree > sideOne);
 	}
 }
