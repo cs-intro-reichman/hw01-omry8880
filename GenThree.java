@@ -10,7 +10,7 @@ public class GenThree {
 		int argsZero = Integer.parseInt(args[0]);
 		int argsOne = Integer.parseInt(args[1]);
 		
-		int randomOne = rand.nextInt(argsOne) + argsZero;
+		int randomOne = rand.nextInt(argsOne) + argsZero; // range: starts from argsZero and ends in argsOne (argsZero - argsOne)
 		int randomTwo = rand.nextInt(argsOne) + argsZero;
 		int randomThree = rand.nextInt(argsOne) + argsZero;
 		int minRandom = Math.min(Math.min(randomOne, randomTwo), randomThree);
