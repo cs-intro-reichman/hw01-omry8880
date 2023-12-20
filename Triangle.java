@@ -9,6 +9,7 @@ public class Triangle {
 		int sideTwo = Integer.parseInt(args[1]);
 		int sideThree = Integer.parseInt(args[2]);
 
-		System.out.println(sideOne + ", " + sideTwo + ", " + sideThree + ": " + (sideOne + sideTwo > sideThree && sideOne + sideThree > sideTwo && sideTwo + sideThree > sideOne));
+		System.out.println(sideOne + ", " + sideTwo + ", " + sideThree + ": " + 
+						   sideOne + sideTwo > sideThree && sideOne + sideThree > sideTwo && sideTwo + sideThree > sideOne);
 	}
 }
