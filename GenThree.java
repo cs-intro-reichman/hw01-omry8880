@@ -10,15 +10,11 @@ public class GenThree {
 		int argsZero = Integer.parseInt(args[0]);
 		int argsOne = Integer.parseInt(args[1]);
 		
-		int randomOne = rand.nextInt(argsOne) + argsZero; // range: starts from argsZero and ends in argsOne (argsZero - argsOne)
-		int randomTwo = rand.nextInt(argsOne) + argsZero;
-		int randomThree = rand.nextInt(argsOne) + argsZero;
+		int randomOne = rand.nextInt(argsOne - argsZero) + argsZero; // range: starts from argsZero and ends in argsOne (argsZero -> argsOne)
+		int randomTwo = rand.nextInt(argsOne - argsZero) + argsZero;
+		int randomThree = rand.nextInt(argsOne - argsZero) + argsZero;
 		int minRandom = Math.min(Math.min(randomOne, randomTwo), randomThree);
 
-		// System.out.println("Random numbers: " + randomOne + ", " + randomTwo + ", " + randomThree + "\nThe minimal generated number was " + minRandom + ".");
-		System.out.println(randomOne);
-		System.out.println(randomTwo);
-		System.out.println(randomThree);
-		System.out.println(minRandom);
+		System.out.println(randomOne + "\n" + randomTwo + "\n" + randomThree + "\nThe minimum random is " + minRandom);
 	}
 }
