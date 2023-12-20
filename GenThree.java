@@ -15,6 +15,10 @@ public class GenThree {
 		int randomThree = rand.nextInt(argsOne) + argsZero;
 		int minRandom = Math.min(Math.min(randomOne, randomTwo), randomThree);
 
-		System.out.println("The minimum random: " + minRandom + ".");
+		// System.out.println("Random numbers: " + randomOne + ", " + randomTwo + ", " + randomThree + "\nThe minimal generated number was " + minRandom + ".");
+		System.out.println(randomOne);
+		System.out.println(randomTwo);
+		System.out.println(randomThree);
+		System.out.println(minRandom);
 	}
 }
