@@ -6,13 +6,12 @@ import java.util.Random;
 
 public class GenThree { 
 	public static void main(String[] args) {
-		Random rand = new Random();
 		int argsZero = Integer.parseInt(args[0]);
 		int argsOne = Integer.parseInt(args[1]);
 
 		int range = argsOne - argsZero;
 
-		int randomOne = (int) (range * Math.random() + argsZero); // 10 - 15 | 0.9 * 15 + 10
+		int randomOne = (int) (range * Math.random() + argsZero);
 		int randomTwo = (int) (range * Math.random() + argsZero);
 		int randomThree = (int) (range * Math.random() + argsZero);
 
