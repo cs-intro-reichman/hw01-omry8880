@@ -10,9 +10,11 @@ public class GenThree {
 		int argsZero = Integer.parseInt(args[0]);
 		int argsOne = Integer.parseInt(args[1]);
 
-		int randomOne = (int) (argsOne * Math.random() + argsZero); 
-		int randomTwo = (int) (argsOne * Math.random() + argsZero);
-		int randomThree = (int) (argsOne * Math.random() + argsZero);
+		int range = argsOne - argsZero;
+
+		int randomOne = (int) (range * Math.random() + argsZero); // 10 - 15 | 0.9 * 15 + 10
+		int randomTwo = (int) (range * Math.random() + argsZero);
+		int randomThree = (int) (range * Math.random() + argsZero);
 
 		int minRandom = Math.min(Math.min(randomOne, randomTwo), randomThree);
 
